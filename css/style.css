@@ -1,13 +1,15 @@
+/* CSS for the Animal Reveal Interface */
 html{
     background-color: #8d99ae;
     font-family: 'Arial', sans-serif;
 }
 
-
+/* Style for the body section */
 body{
     text-align: center;
 }
 
+/* Style for the animal buttons section */
 .animal_btns{
     display: flex;
     justify-content: center;
@@ -21,6 +23,7 @@ body{
     border-radius: 15px;
 }
 
+/* Style for the animal reveal buttons */
 .animal_reveal{
     display: flex;
     justify-content: center;
@@ -45,11 +48,13 @@ body{
     background-color: rgb(48, 124, 255);
 }
 
+/* Style for the animal cards */
 .animal_card{
     width: 250px;
     height: 305px;
 }
 
+/* Style for the bottom bar with reset button and animal count */
 .bottom_bar{
     position: fixed;
     bottom: 0;

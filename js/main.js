@@ -3,6 +3,7 @@ const dog = document.getElementById("dog");
 const cow = document.getElementById("cow");
 let count = 0;
 
+// Function to reveal an animal image and update the count
 function revealAnimal(animal, BtnId, btn) {
     const img = document.getElementById(animal);
     const hideBtn = document.getElementById(BtnId);
@@ -17,6 +18,7 @@ function revealAnimal(animal, BtnId, btn) {
     document.getElementById("count").textContent = count;
 }
 
+// Function to hide an animal image and update the count
 function hideAnimal(animal, BtnId, btn) {
     document.getElementById(animal).style.display = "none";
     document.getElementById(BtnId).style.display = "none";
@@ -25,6 +27,7 @@ function hideAnimal(animal, BtnId, btn) {
     document.getElementById("count").textContent = count;
 }
 
+// Event listeners for reveal buttons
 document.getElementById("btn1").addEventListener("click", function() {
     revealAnimal("cat", "hide_btn1", "btn1");
 });
@@ -35,6 +38,7 @@ document.getElementById("btn3").addEventListener("click", function() {
     revealAnimal("cow", "hide_btn3", "btn3");
 });
 
+// Event listeners for hide buttons
 document.getElementById("hide_btn1").addEventListener("click", function() {
     hideAnimal("cat", "hide_btn1", "btn1");
 });
@@ -45,6 +49,7 @@ document.getElementById("hide_btn3").addEventListener("click", function() {
     hideAnimal("cow", "hide_btn3", "btn3");
 });
 
+// Event listener for reset button to hide all animals and reset count
 document.querySelector('button[type="reset"]').addEventListener("click", function() {
     cat.style.display = "none";
     dog.style.display = "none";

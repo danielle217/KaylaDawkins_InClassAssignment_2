@@ -10,11 +10,13 @@
 </head>
 
 <body>
+    <!-- Header section with title and instructions -->
     <header>
         <h1>Welcome to Whats the Animal?</h1>
         <h3>Click the buttons below to reveal the animal images.</h3>
     </header>
 
+    <!-- Main section with animal cards and buttons -->
     <div class="animal_reveal">
         <div class="animal_card">
             <img id="cat" src="images/tabby-cat.jpg" alt="cat image" style="display: none;">
@@ -30,12 +32,14 @@
         </div>
     </div>
 
+    <!-- Buttons to reveal animals -->
     <div class="animal_btns">
         <button id="btn1">Reveal a CAT</button>
         <button id="btn2">Reveal a DOG</button>
         <button id="btn3">Reveal a COW</button>
     </div>
 
+    <!-- Bottom bar with reset button and animal count -->
     <div class="bottom_bar">
         <button class="reset" type="reset">Reset Zoo</button>
         <p>Animals on screen: <span id="count">0</span></p>
